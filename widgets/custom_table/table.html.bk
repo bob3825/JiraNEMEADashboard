@@ -1,0 +1,20 @@
+<h1 class="title" data-bind="title"></h1>
+
+<table data-bind-cellspacing="cellspacing" data-bind-cellpadding="cellpadding">
+	<thead>
+		<tr>
+			<th data-foreach-header="headers" data-bind="header.value"></th>
+		</tr>
+	</thead>
+	<tbody>
+  <tr data-foreach-row="rows" data-bind-style="row.style" data-bind-class="row.class">
+  	<td data-foreach-col="row.cols" data-bind-title="col.title" data-bind-style="col.style" data-bind-class="col.class" data-bind-height="col.height" data-bind-width="col.width" data-bind-max-width="col.max-width">
+  		<span data-bind="col.value | raw" data-bind-style="col.style" data-bind-max-width="col.max-width" data-bind-width="col.width"></span>
+  		<span data-bind-class="col.arrow"></span>
+  	</td>
+  </tr>
+</tbody>
+</table>
+
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>

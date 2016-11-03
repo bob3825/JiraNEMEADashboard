@@ -1,0 +1,25 @@
+---
+convergence: |+
+  data: {"points":[{"x":17,"y":15},{"x":18,"y":14},{"x":19,"y":17},{"x":20,"y":19},{"x":21,"y":25},{"x":22,"y":7},{"x":23,"y":47},{"x":24,"y":44},{"x":25,"y":10},{"x":26,"y":47}],"id":"convergence","updatedAt":1477912600}
+
+buzzwords: |+
+  data: {"items":[{"label":"Web 2.0","value":1},{"label":"Paradigm shift","value":2},{"label":"Pivoting","value":2},{"label":"Enterprise","value":3},{"label":"Synergy","value":2},{"label":"Turn-key","value":1},{"label":"Streamlininess","value":3},{"label":"Leverage","value":1},{"label":"Exit strategy","value":1}],"id":"buzzwords","updatedAt":1477912600}
+
+valuation: |+
+  data: {"current":48,"last":42,"id":"valuation","updatedAt":1477912600}
+
+karma: |+
+  data: {"current":5207,"last":98374,"id":"karma","updatedAt":1477912600}
+
+synergy: |+
+  data: {"value":97,"id":"synergy","updatedAt":1477912600}
+
+open_tickets_dashboard: |+
+  data: {"header":"Open","rows":[{"summary":"DR DART OPTIMIZATION SUPPORT","proj_nr":"SE_5060","proj_manager":"mwi","rag_status":null,"duedate":null,"completion":"100%","status":"Open"},{"summary":"SKY DART ENHANCEMENT - T&M","proj_nr":"SE_5058","proj_manager":"mry","rag_status":null,"duedate":null,"completion":"43%","status":"Open"},{"summary":"TV4 CONSULTANCY - CMORE","proj_nr":"SE_5055","proj_manager":"pan","rag_status":null,"duedate":null,"completion":"94%","status":"Open"},{"summary":"ORF - PCMS T&M","proj_nr":"SE_5053","proj_manager":"stb","rag_status":null,"duedate":null,"completion":"87%","status":"Open"},{"summary":"UIB - NEW VIZ ONE INSTALLATION","proj_nr":"SE_5046","proj_manager":"None","rag_status":null,"duedate":null,"completion":"100%","status":"Open"},{"summary":"RSI CHANGES (PCR)","proj_nr":"SE_5045","proj_manager":"None","rag_status":null,"duedate":null,"completion":"91%","status":"Open"},{"summary":"BSKYB ON-SITE SUPPORT","proj_nr":"SE_5042","proj_manager":"njo","rag_status":null,"duedate":null,"completion":"100%","status":"Open"}],"id":"open_tickets_dashboard","updatedAt":1477912573}
+
+eval_tickets_dashboard: |+
+  data: {"header":"Under Evaluation","rows":[],"id":"eval_tickets_dashboard","updatedAt":1477912573}
+
+in_progress_tickets_dashboard: |+
+  data: {"header":"In Progress","rows":[{"summary":"TV2 CONSULTANCY AGREEMENT","proj_nr":"SE_5050","proj_manager":"pan","rag_status":null,"duedate":null,"completion":"106%","status":"In Progress"}],"id":"in_progress_tickets_dashboard","updatedAt":1477912573}
+

@@ -1,0 +1,181 @@
+<style>
+body{
+	font-family:Open Sans;
+	/*background-color: black;*/
+	background-image: url("BackgroundProductReleaseDashboard.jpg");
+	/*background-size:cover;*/
+	background-repeat:no-repeat;
+	height:100%
+	background-size: cover;
+	/*-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+	background-position: center center;*/
+}
+
+
+table{
+    	vertical-align:top;
+	/*background: #1E2022;*/
+	/*background-color:rgba(100, 100, 100, 0.5)*/
+	border-radius:5px;
+    	-moz-border-radius:5px;
+    	-webkit-border-radius:5px;
+}
+.line {
+    display: block;
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+    margin-left: auto;
+    margin-right: auto;
+    /*border-bottom:1pt groove #5A5D60;
+    border-bottom-color: blue;
+    border-top-color: red;*/
+    border-bottom-width:thin;
+    border-bottom-style:groove;
+    border-bottom-color: rgba(0,0,0,0.2);
+}
+
+.rounded-outline{
+	border-radius:5px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+	/*background: #1E2022;
+	opacity:1;*/
+	padding-bottom:10px;
+}
+
+
+.release-table td {
+	/*background-color: #4b4b4b;*/
+	text-align:center;
+	opacity:1;
+
+}
+
+th{
+	font-weight:normal;
+	text-transform: uppercase;
+}
+
+.release-table{
+	vertical-align:top;
+        background: #5A5D60;
+	opacity:1;
+        border-radius:5px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+	/*border-collapse: collapse;*/
+}
+.release-table .product{
+	text-transform: uppercase;
+	font-size:14px;
+	padding-bottom:0px;
+	font-family: open sans - semibold;
+	color:#FFFFFF;
+}
+
+.release-table .summary{
+        /*text-transform: uppercase;*/
+        font-size:25px;
+	padding-top:0px;
+	color:#FFFFFF;
+}
+
+.internal-heading td{
+        text-transform: uppercase;
+        font-size:15px;
+	text-align:right;
+	padding-bottom:0px;
+	color: rgba(196,197,198,1)
+}
+
+.release-table .internal-body td{
+        /*text-transform: uppercase;*/
+        font-size:20PX;
+	text-align:left;
+	padding-top:0px;
+	color:#FFFFFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width:200px;
+}
+.internal-body td.date{
+	color:rgba(89,213,255,1);
+	text-align:right;
+}
+.column-background{
+	background: rgba(66,69,72,0.6);
+	border-bottom-left-radius:5px;
+        -moz-border-bottom-left-radius:5px;
+        -webkit-border-bottom-left-radius:5px;
+
+	border-bottom-right-radius:5px;
+        -moz-border-bottom-right-radius:5px;
+        -webkit-border-bottom-right-radius:5px;
+}
+
+.header{
+        border-top-left-radius:5px;
+        -moz-border-top-left-radius:5px;
+        -webkit-border-top-left-radius:5px;
+
+        border-top-right-radius:5px;
+        -moz-border-top-right-radius:5px;
+        -webkit-border-top-right-radius:5px;
+	
+	font-family: open sans;
+	font-size:38px;
+	color:#FFFFFF;
+}
+</style>
+<div class="rounded-outline">
+<table class="column-background" cellspacing=0 cellpadding=0 border=0>
+	<thead>
+		<tr>
+			<th data-bind="header" width="500" height=100px class="header" data-bind-style="headerstyle">
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+	    
+	    <tr>
+		<td height=100% style="overflow:auto; display:block; padding-left:0; padding-right:0; margin-left:10px; margin-right:10px;">
+		<table width="100%" cellspacing=10 cellpadding=10>
+		<tr><td style="color:#D3D3D3;text-align:center;padding-top:5px;padding-bottom:0px" data-bind="updatedAtMessage"></td></tr>
+  		<tr data-foreach-project="rows">
+  			<td width="100%" style="padding-left:0; padding-right:0;">
+  				<table class='release-table' cellspacing=10 cellpadding=10>
+					<tr>
+						<td data-bind="project.proj_nr" colspan=3 class="product"</td>
+					</tr>
+					<tr>
+                                                <td data-bind="project.summary" colspan=3 class="summary"></td>
+                                        </tr>
+					<tr>
+						<td colspan=3 style="padding-top:0px; padding-bottom:0px;"><div class="line"/></td>
+					</tr>
+					<tr class="internal-heading">
+                                                <td width="300px" style="text-align:left;">Project Manager</td>
+                                                <td  style="text-align:left;">Due Date</td>
+                                                <td>Completion</td>
+                                        </tr>
+					<tr class="internal-body">
+                                                <td data-bind="project.proj_manager"></td>
+						<td data-bind="project.duedate" class="date"  style="text-align:left;"></td>
+						<td data-bind="project.completion" class="date"></td>
+                                        </tr>
+					
+					
+				</table>
+  			</td>
+  		</tr>
+		</table>
+		</td>
+	    </tr>
+	</tbody>
+</table>
+</div>
+<!--<p class="updated-at" data-bind="updatedAtMessage" style="color:white; text-align:center;"></p> -->
+

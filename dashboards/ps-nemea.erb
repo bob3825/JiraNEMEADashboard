@@ -1,0 +1,80 @@
+<script type='text/javascript'>
+$(function() {
+	// These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+	Dashing.widget_base_dimensions = [700, 90]
+	Dashing.numColumns = 3
+	Dashing.numRows = 3
+});
+</script>
+<style>
+.widget-text h1 {
+	font-size: 10px;
+	font-family: open sans - light;
+	color: #FFFFFF;
+	text-align:top;
+
+}
+
+body {
+    transform: scale(0.85);
+    zoom: 0.85; /* Old IE only */
+    -moz-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+}
+
+.dashborad-title{
+	font-size: 40px;
+    	font-family: open sans;
+    	color: #ACAEAF;
+    	text-align:center;
+	padding-bottom:0 !important;
+	vertical-align:top;
+	margin-top:0 !important;
+}
+div.background{
+        font-family:Open Sans;
+        background-color: #5A5D60;
+        background-image: url("BackgroundProductReleaseDashboard.jpg");
+        background-repeat:no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size:cover;
+
+}
+
+</style>
+<div class="gridster">
+    <ul>
+        <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
+            <div data-id="ps-nemea-logo" data-view="Text" style= "background: url('logo_Vizrt42x22px.png') no-repeat center;background-size: 150px"></div>
+        </li>
+	    <li data-row="2" data-col="1" data-sizex="3" data-sizey="1" style="padding-top:0px; vertical-align:top;">
+    		<div class="dashborad-title">PS NEMEA Projects</div>
+	    </li>
+	    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
+        	<div
+        	    data-id="open_tickets_dashboard"
+        	    data-view="Custom_Table"
+		        style= "vertical-align:middle;"
+		        data-headerstyle="background:rgba(231,232,232,0.85);color:black;">
+        	</div>
+	    </li>
+	    <li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
+            <div
+                data-id="eval_tickets_dashboard"
+                data-view="Custom_Table"
+                style= "vertical-align:middle;"
+                data-headerstyle="background:rgba(255,175,0,0.85);color:white;"> 
+            </div>
+        </li>
+    	<li data-row="3" data-col="3" data-sizex="1" data-sizey="1">
+            <div
+                data-id="in_progress_tickets_dashboard"
+                data-view="Custom_Table"
+                style= "vertical-align:middle;"
+                data-headerstyle="background:rgba(255,175,0,0.85);color:white;">
+            </div>
+        </li>
+    </ul>
+</div>

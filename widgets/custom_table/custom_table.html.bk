@@ -1,0 +1,20 @@
+<style>
+td {
+	background-color: #4b4b4b;
+}
+</style>
+<h1 class="title" data-bind="title"></h1>
+<table border="1">
+	<thead>
+		<tr>
+			<th data-bind="header" width="500"></th>
+		</tr>
+	</thead>
+	<tbody>
+  		<tr>
+  			<td>
+  				<span data-bind="body | raw"></span>
+  			</td>
+  		</tr>
+	</tbody>
+</table>
